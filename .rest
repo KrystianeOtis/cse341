@@ -1,11 +1,27 @@
 // LOCALHOST
 ###
-GET http://localhost:3000/contacts
+GET http://localhost:3000/Contacts HTTP/1.1
 ###
-GET http://localhost:3000/contacts/63c3851839144d97fda19d4c
+GET http://localhost:3000/Contacts/63c3851839144d97fda19d4c HTTP/1.1
+
+###
+GET http://localhost:3000/Contacts/63c3851839144d97fda19d4d HTTP/1.1
+
+###
+GET http://localhost:3000/Contacts/63c3851839144d97fda19d4e HTTP/1.1
+
 
 
 // PRODUCTION DEPLOY
 ###
-Send Request
-GET https://cse341-lesson1-lwex.onrender.com
+GET https://cse341-lesson1-lwex.onrender.com/Contacts HTTP/1.1
+
+###
+GET https://cse341-lesson1-lwex.onrender.com/Contacts/63c3851839144d97fda19d4c HTTP/1.1
+
+###
+GET https://cse341-lesson1-lwex.onrender.com/Contacts/63c3851839144d97fda19d4d HTTP/1.1
+
+###
+GET https://cse341-lesson1-lwex.onrender.com/Contacts/63c3851839144d97fda19d4e HTTP/1.1
+
