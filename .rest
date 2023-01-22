@@ -10,7 +10,37 @@ GET http://localhost:3000/Contacts/63c3851839144d97fda19d4d HTTP/1.1
 ###
 GET http://localhost:3000/Contacts/63c3851839144d97fda19d4e HTTP/1.1
 
+###
+POST http://localhost:3000/Contacts/edit/content HTTP/1.1
 
+
+### Create contact
+POST http://localhost:3000/Contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Andrew",
+    "lastName":"Johnson",
+    "email":"andrewJ1990@gmail.com",
+    "favoriteColor":"Blue",
+    "birthday":"01/01/1990"
+}
+
+
+### PUT contact
+PUT http://localhost:8080/contacts/6220bcb39cd507e920c75a0b HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Jessica",
+    "lastName":"Rodriguez",
+    "email":"jessica.rodriguez@yahoo.com",
+    "favoriteColor":"Red",
+    "birthday":"10/28/1993"
+}
+
+### DELETE contact
+DELETE http://localhost:8080/contacts/ HTTP/1.1
 
 // PRODUCTION DEPLOY
 ###
