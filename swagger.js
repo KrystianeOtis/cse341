@@ -5,8 +5,8 @@ const doc = {
     title: 'My API',
     description: 'Description',
   },
-  host: 'https://cse341-lesson1-lwex.onrender.com',
-  schemes: ['http'],
+  host: 'cse341-lesson1-lwex.onrender.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
